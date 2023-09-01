@@ -1,0 +1,53 @@
+.products{
+    margin: 15px;
+    padding: 0;
+    display: grid;
+    border: none;
+    gap: 14px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.products-single-items{
+
+    height: 160px;
+    padding: 30px;
+    text-align: center;
+    border: none;
+}
+
+.products-single-items > img {
+
+    
+
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border: none;
+
+
+
+
+    margin-bottom: 6px;
+}
+
+
+
+
+.pagination{
+
+    padding: 15px;
+
+    margin: 15 0px;
+    display: flex;
+    border: none;
+    justify-content: center;
+}
+
+.pagination > span {
+
+    padding: 15px 30px ;
+
+
+    cursor: pointer;
+    
+}
