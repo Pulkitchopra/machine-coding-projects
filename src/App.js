@@ -1,5 +1,5 @@
 import './App.css';
-import Pagination from './Pagination/Pagination';
+import Index from './Modal/Index';
 
 function App() {
  
@@ -7,11 +7,10 @@ function App() {
 
     <div className="App">
 
+    <Index/>
 
 
 
-
-    <Pagination/>
 
     <span>
       
