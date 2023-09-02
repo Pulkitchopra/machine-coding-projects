@@ -1,5 +1,5 @@
 import './App.css';
-import Index from './Modal/Index';
+
 
 function App() {
  
@@ -7,7 +7,7 @@ function App() {
 
     <div className="App">
 
-    <Index/>
+
 
 
 
