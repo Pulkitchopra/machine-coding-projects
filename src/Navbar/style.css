@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+
+    display: flex;
+    background-color: gray;
+    height: 80px;
+    border: none;
+    position: sticky;
+    justify-content: right;
+}
+
+.navbar{
+
+    height: 80px;
+
+    display: flex;
+ 
+    position: sticky;
+    border: none;
+    padding: 8px;
+
+}
+
+
+
+.navbar nav ul {
+
+    display: flex;
+
+    font-size: 1.6rem;
+
+    list-style: none;
+    border: none;
+    padding: 14px;
+    text-decoration: none;
+}
+
+.menu-icons{
+    display: none;
+}
+
+
+
+  

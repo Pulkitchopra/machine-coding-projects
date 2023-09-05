@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './style.css'
 import {Link} from 'react-router-dom'
 
@@ -17,32 +17,48 @@ const Navbar = () => {
 
     ];
 
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => {setClick(!click)};
+    const closeMobileMenu = () => { setClick(false) }
+
   return (
 
-    <div>
 
+    <div className= 'container'  >
+
+
+    <div className= 'menu-icons' onClick={handleClick} >
+
+
+
+    { click ? <i className="fa-solid fa-bars"></i> : <i className="fa-solid fa-times"></i> }
+
+    </div>
+
+    
     {menu.map(({menulinks, path, index}) => {
         return(
-
-
 
 
     <div className='navbar' key={index} >
  
     <nav>
 
+
+
+
     <ul>
 
     <li>
 
-    <Link to={path}>{menulinks}</Link>
+    <Link to={path} onClick={closeMobileMenu} >{menulinks}</Link>
 
     </li>
-    
+
     </ul>
 
     </nav>
-
 
     </div>
         )
