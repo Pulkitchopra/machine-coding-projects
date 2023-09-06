@@ -20,50 +20,48 @@ const Navbar = () => {
     const [click, setClick] = useState(false);
 
     const handleClick = () => {setClick(!click)};
-    const closeMobileMenu = () => { setClick(false) }
+
 
   return (
 
 
-    <div className= 'container'  >
+    <div>
 
-
-    <div className= 'menu-icons' onClick={handleClick} >
-
-
-
-    { click ? <i className="fa-solid fa-bars"></i> : <i className="fa-solid fa-times"></i> }
-
-    </div>
 
     
+    <nav className='navbar-container'>
+
+    <div className= 'menu-icons' onClick={handleClick}>
+
+    { click ? <i className="fa-solid fa-times"></i> : <i className="fa-solid fa-bars"></i>}
+    </div>
+    
+
     {menu.map(({menulinks, path, index}) => {
         return(
 
 
-    <div className='navbar' key={index} >
+    <div className='navbar'>
  
-    <nav>
-
-
-
-
-    <ul>
+    <ul key={index} className= { click ? 'menu-items-active' : 'menu-items' } >
 
     <li>
 
-    <Link to={path} onClick={closeMobileMenu} >{menulinks}</Link>
+
+
+    <Link to={path}>{menulinks}</Link>
 
     </li>
 
     </ul>
 
-    </nav>
+
 
     </div>
         )
 
     })}
+    </nav>
 
 
 
