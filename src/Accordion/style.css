@@ -1,0 +1,56 @@
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    border: none;
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.accordion{
+    width: 800px;
+}
+
+.item{
+
+    background-color: gray;
+
+    margin-bottom: 8px;
+
+    padding: 14 16px;
+}
+
+
+
+
+.title{
+
+    color: black;
+
+    display: flex;
+
+    justify-content: space-between;
+    border: none;
+    align-items: center;
+}
+
+.content{
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+    border: none;
+    transition: all 0.5s ease-in;
+}
+
+
+
+.content.show{
+    height: auto;
+    
+    max-height: 9999px;
+    transition: all 0.5s ease-in;
+}

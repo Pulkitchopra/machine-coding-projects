@@ -12,7 +12,7 @@ import './App.css';
 
 // import Projects from './Navbar/Projects';
 // import Navbar from './Navbar/Navbar';
-import Tabs from './Tabs/Tabs';
+import Accordion from './Accordion/Accordion';
 function App() {
 
 
@@ -37,7 +37,7 @@ function App() {
     </Router> */}
 
 
-    <Tabs/>
+    <Accordion/>
 
 
 
