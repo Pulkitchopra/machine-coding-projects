@@ -1,18 +1,18 @@
 import './App.css';
-import {
-  BrowserRouter as Router,
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Routes
+// } from "react-router-dom";
+// import Home from './Navbar/Home';
 
-  Route,
-  Routes
-} from "react-router-dom";
-import Home from './Navbar/Home';
+// import About from './Navbar/About';
+// import Skills from './Navbar/Skills';
+// import Contact from './Navbar/Contact';
 
-import About from './Navbar/About';
-import Skills from './Navbar/Skills';
-import Contact from './Navbar/Contact';
-
-import Projects from './Navbar/Projects';
-import Navbar from './Navbar/Navbar';
+// import Projects from './Navbar/Projects';
+// import Navbar from './Navbar/Navbar';
+import Tabs from './Tabs/Tabs';
 function App() {
 
 
@@ -21,7 +21,7 @@ function App() {
 
     <div className="App">
 
-    <Router>
+    {/* <Router>
     <Navbar/>
 
 
@@ -34,18 +34,13 @@ function App() {
       <Route exact path='/contact' element={<Contact/>} />
       <Route exact path='/projects' element={<Projects/>} />
       </Routes>
-    </Router>
+    </Router> */}
+
+
+    <Tabs/>
 
 
 
-
-
-
-    <span>
-      
-
-
-    </span>
       
     </div>
   );
