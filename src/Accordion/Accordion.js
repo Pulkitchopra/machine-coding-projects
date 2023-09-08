@@ -55,7 +55,7 @@ const Accordion = () => {
 
     <div className='accordion'>
 
-    {data.map(({question, answer, index }) => {
+    {data.map(({question, answer, index  }) => {
 
 
         return(
