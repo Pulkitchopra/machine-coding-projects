@@ -12,7 +12,8 @@ import './App.css';
 
 // import Projects from './Navbar/Projects';
 // import Navbar from './Navbar/Navbar';
-import Accordion from './Accordion/Accordion';
+// import Accordion from './Accordion/Accordion';
+import Grid from './Grid Lights/Grid';
 function App() {
 
 
@@ -37,7 +38,8 @@ function App() {
     </Router> */}
 
 
-    <Accordion/>
+    {/* <Accordion/> */}
+    <Grid/>
 
 
 
